@@ -122,6 +122,6 @@ function goToHome() {
     window.location.href = 'index.html';
 }
 
-function goToTraining() {
-    window.location.href = 'training.html';
-}
+//function goToTraining() {
+//    window.location.href = 'training.html';
+//}
