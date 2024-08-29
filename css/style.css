@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;  /* Dark background */
+    color: #E0E0E0;  /* Light text for readability */
+}
+
+header {
+    background-color: #1F1F1F;  /* Darker header */
+    color: #E0E0E0;  /* Light text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Home Page */
+.selection-menu {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #1F1F1F;  /* Darker background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  /* Softer shadow */
+}
+
+.selection-menu h2 {
+    margin-bottom: 20px;
+    color: #E0E0E0;  /* Light text */
+}
+
+.selection-menu label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #B0B0B0;  /* Slightly lighter than the body text */
+}
+
+.selection-menu select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #333333;  /* Dark border */
+    background-color: #2C2C2C;  /* Darker dropdown */
+    color: #E0E0E0;  /* Light text */
+}
+
+.selection-menu button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;  /* Vibrant blue button */
+    color: #E0E0E0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.selection-menu button:hover {
+    background-color: #0056b3;  /* Slightly darker on hover */
+}
+
+/* Training Page */
+.training-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #1F1F1F;  /* Darker background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  /* Softer shadow */
+    text-align: center;
+}
+
+#number-container {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #E0E0E0;  /* Light text */
+}
+
+#answer-input {
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: 2px;  /* Add margin for spacing */
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid #333333;  /* Dark border */
+    background-color: #2C2C2C;  /* Darker input field */
+    color: #E0E0E0;  /* Light text */
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;  /* Green for correct answers */
+}
+
+#feedback.wrong {
+    color: #dc3545;  /* Red for incorrect answers */
+}
+
+/* Results Page */
+.results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1F1F1F;  /* Darker background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  /* Softer shadow */
+}
+
+#chart-options {
+    margin-top: 20px;
+}
+
+#chart-options label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #B0B0B0;  /* Slightly lighter than the body text */
+}
+
+#chart-options select {
+    padding: 8px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 1px solid #333333;  /* Dark border */
+    background-color: #2C2C2C;  /* Darker dropdown */
+    color: #E0E0E0;  /* Light text */
+}
+
+canvas {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;  /* Vibrant blue */
+    color: #E0E0E0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Slightly darker on hover */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;  /* Dark background for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3C3C3C;  /* Darker thumb */
+    border-radius: 10px;
+    border: 2px solid #121212;  /* Matches the background */
+}

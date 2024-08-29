@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Results</h1>
+    </header>
+    <main>
+        <div class="results-container">
+            <div id="chart-options">
+                <label for="operation-select">Operation:</label>
+                <select id="operation-select" onchange="updateChart()">
+                    <option value="square">Square</option>
+                    <option value="square-root">Square Root</option>
+                    <option value="cube">Cube</option>
+                    <option value="cube-root">Cube Root</option>
+                </select>
+
+                <label for="digits-select">Digits:</label>
+                <select id="digits-select" onchange="updateChart()">
+                    <option value="2">2-digit</option>
+                    <option value="3">3-digit</option>
+                </select>
+            </div>
+
+            <canvas id="performanceChart"></canvas>
+
+            <div id="summary-container">
+                <!-- Summary Report Will Be Displayed Here -->
+            </div>
+
+            <button onclick="goToHome()">Go to Home</button>
+            <button onclick="goToTraining()">Start Training</button>
+        </div>
+    </main>
+
+    <script src="js/results.js"></script>
+</body>
+</html>

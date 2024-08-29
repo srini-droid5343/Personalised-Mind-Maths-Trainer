@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Training</h1>
+    </header>
+    <main>
+        <div class="training-container">
+            <div id="number-container"></div>
+            <input type="text" id="answer-input" placeholder="Your answer" onkeyup="if(event.keyCode === 13) checkAnswer()">
+            <button onclick="checkAnswer()">Check</button>  <!-- New Check button -->
+            <div id="feedback"></div>
+            <button onclick="goToHome()">Go to Home</button>
+            <button onclick="goToResults()">View Results</button>
+        </div>
+    </main>
+    <script src="js/training.js"></script>
+</body>
+</html>

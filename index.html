@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Trainer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Math Trainer</h1>
+    </header>
+    <main>
+        <div class="selection-menu">
+            <h2>Select Your Training</h2>
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="square">Square</option>
+                <option value="square-root">Square Root</option>
+                <option value="cube">Cube</option>
+                <option value="cube-root">Cube Root</option>
+            </select>
+
+            <label for="digits">Digits:</label>
+            <select id="digits">
+                <option value="2">2-digit</option>
+                <option value="3">3-digit</option>
+            </select>
+
+            <label for="mode">Mode:</label>
+            <select id="mode">
+                <option value="sequential">Sequential</option>
+                <option value="random">Random</option>
+            </select>
+
+            <button onclick="startTraining()">Start Training</button>
+            <button onclick="goToResults()">View Results</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
