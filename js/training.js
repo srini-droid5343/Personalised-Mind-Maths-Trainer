@@ -127,7 +127,7 @@ function showFeedback(isCorrect) {
         feedback.classList.add('correct');
     } else {
         const correctAnswerText = operation === 'square-root' || operation === 'cube-root' ? currentNumber : getDisplayNumber(currentNumber, operation);
-        feedback.innerText = `Incorrect! Correct answer: ${correctAnswerText}`;
+        feedback.innerText = `Incorrect!`;
         feedback.classList.remove('correct');
         feedback.classList.add('wrong');
     }
